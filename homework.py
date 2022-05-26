@@ -19,7 +19,7 @@ class InfoMessage:
     )
 
     def get_message(self) -> str:
-        return self.final_message.format(*asdict(self).values()
+        return self.final_message.format(*asdict(self).values())
 
 
 class Training:
