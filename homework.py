@@ -183,7 +183,7 @@ def read_package(workout_type: str, data: list) -> Training:
     }
     if workout_type not in typetraining_dict:
         raise ValueError('Допустимые значения '
-                         'тренировок: '.join(typetraining_dict.keys())
+                         'тренировок: ' + ','.join(typetraining_dict.keys())
                          )
     return typetraining_dict[workout_type](*data)
 
